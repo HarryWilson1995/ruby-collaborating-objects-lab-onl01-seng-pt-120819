@@ -24,10 +24,8 @@ class Artist
     self.all.detect do |artist|
       if artist.name == name 
         self.name = name
-        self 
       else 
         self.name = Artist.new(name)
-        self 
       end 
      end 
   end 
