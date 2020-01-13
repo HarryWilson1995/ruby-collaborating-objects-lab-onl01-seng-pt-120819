@@ -12,7 +12,7 @@ class MP3Importer
   
   
   def import 
-    
+    self.files.each {|file| 
   end 
   
 end 
