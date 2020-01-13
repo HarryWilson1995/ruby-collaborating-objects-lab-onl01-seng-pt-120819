@@ -21,7 +21,7 @@ class Artist
   end 
   
   def self.find_or_create_by_name(name)
-    self.all.each do |name|
+    self.all.collect do |name|
       if self.name == name
         self.name = name 
       else 
