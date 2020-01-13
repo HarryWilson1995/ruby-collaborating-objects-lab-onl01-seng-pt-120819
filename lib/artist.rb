@@ -1,4 +1,4 @@
-require 'pry'
+require'pry'
 
 class Artist 
   attr_accessor :name 
@@ -23,8 +23,8 @@ class Artist
   end 
   
   def self.find_or_create_by_name(name)
+    binding.pry 
     @@all.collect do |artist|
-      binding.pry 
       if self.name == name 
         self.name = name
       else 
