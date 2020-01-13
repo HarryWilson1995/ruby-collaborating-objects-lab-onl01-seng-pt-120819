@@ -1,4 +1,4 @@
-require 'pry'
+require 'Pry'
 
 class Artist 
   attr_accessor :name 
