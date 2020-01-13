@@ -22,9 +22,11 @@ class Artist
   
   def self.find_or_create_by_name(name)
     self.all.include?(name)
+    if true 
         self.name = name 
       else 
         self.name = Artist.new(name)
+      end 
   end 
   
   def print_songs
